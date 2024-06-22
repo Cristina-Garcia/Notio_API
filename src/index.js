@@ -4,6 +4,8 @@ const axios = require('axios')
 const { Client } = require('@notionhq/client')
 const notion = new Client({ auth: process.env.NOTION_KEY }) // Initializing a client
 
+console.log(process.env.NOTION_KEY)
+
 const pokeArray = []
 
 //For take the first pokemon data
