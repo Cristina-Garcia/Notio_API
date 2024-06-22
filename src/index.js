@@ -32,7 +32,7 @@ async function getPokemonData() {
     })
   createNotionPage()
 }
-
+getPokemonData()
 async function createNotionPage() {
   for (let pokemon of pokeArray) {
     const response = await notion.pages.create({
